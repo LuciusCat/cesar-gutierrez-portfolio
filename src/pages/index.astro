@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Header, Main, Footer } from "../components/layout/index.astro";
+---
+
+<Layout title="Porfolio César Gutiérrez | Desarrollador front-end">
+  <div class="page">
+    <Header />
+    <Main />
+    <Footer />
+  </div>
+</Layout>
+
+<style>
+  .page {
+    color: var(--white-color);
+    width: 60%;
+    height: 100vh;
+    margin-inline: auto;
+    font-family: var(--inter-font);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+</style>

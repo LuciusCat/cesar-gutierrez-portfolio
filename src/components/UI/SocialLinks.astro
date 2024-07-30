@@ -1,0 +1,39 @@
+<article class="social-links">
+  <a href="">
+    <img src="icons/github.svg" alt="Logo GitHub" />
+    Github
+  </a>
+  <a href="">
+    <img src="icons/linkedin.svg" alt="Logo LinkedIn" />
+    LinkedIn
+  </a>
+  <a href="">
+    <img src="icons/whatsapp.svg" alt="Logo Whatsapp" />
+    Whatsapp
+  </a>
+</article>
+
+<style>
+  .social-links {
+    display: flex;
+    gap: 1em;
+    a {
+      display: flex;
+      align-items: center;
+      min-width: fit-content;
+      gap: 0.5em;
+      padding: 0.3em 1em;
+      background-color: var(--gray-color);
+      border-radius: 20px;
+      transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        scale 0.3s ease;
+      &:hover {
+        background-color: var(--green-color);
+        color: var(--black-color);
+        scale: 1.02;
+      }
+    }
+  }
+</style>

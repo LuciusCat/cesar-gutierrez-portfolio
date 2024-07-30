@@ -1,0 +1,75 @@
+---
+import SocialLinks from "./SocialLinks.astro";
+---
+
+<section class="owner">
+  <article class="owner-info">
+    <div class="owner-info__head">
+      <h1>César Gutiérrez</h1>
+      <h2>"Desarrollador front-end y creador de páginas web únicas."</h2>
+    </div>
+
+    <div class="owner-info__body">
+      <p>
+        <span>Programar es mi pasión. </span>Si tienes un diseño realizado o en
+        mente, yo lo hago realidad; y si no, también. 👍
+      </p>
+      <SocialLinks />
+    </div>
+  </article>
+  <figure class="owner-photo">
+    <img src="img/owner.webp" alt="Fotografía César Gutiérrez" />
+  </figure>
+</section>
+
+<style>
+  .owner {
+    display: flex;
+    flex-wrap: wrap;
+
+    .owner-info {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      gap: 1em;
+
+      .owner-info__head {
+        h1 {
+          font-size: 40px;
+          font-family: var(--archivo-black-font);
+        }
+        h2 {
+          font-family: var(--archivo-black-font);
+          color: var(--green-color);
+          font-size: 20px;
+        }
+      }
+
+      .owner-info__body {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 0.5em;
+
+        span {
+          font-weight: bold;
+          color: var(--skyblue-color);
+        }
+      }
+    }
+
+    .owner-photo {
+      display: grid;
+      place-content: center;
+      width: 25%;
+      img {
+        width: 150px;
+        height: 150px;
+        border: 2px solid var(--green-color);
+        border-radius: 50%;
+        aspect-ratio: 1 / 1;
+      }
+    }
+  }
+</style>
