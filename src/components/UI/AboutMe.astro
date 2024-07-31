@@ -1,0 +1,31 @@
+---
+import AboutMeInfo from "./AboutMeInfo.astro";
+import AboutMeEdu from "./AboutMeEdu.astro";
+import AboutMeTech from "./AboutMeTech.astro";
+---
+
+<section class="about-me">
+  <AboutMeInfo />
+  <AboutMeEdu />
+  <div title="background" class="background"></div>
+  <AboutMeTech />
+</section>
+
+<style>
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    border-radius: 10px;
+  }
+  .background {
+    background-image: url("/cesar-gutierrez-portfolio/img/escr.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+</style>

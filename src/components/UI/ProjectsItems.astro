@@ -1,0 +1,78 @@
+---
+import Javascript from "./icons/Javascript.astro";
+import React from "./icons/React.astro";
+import CSS from "./icons/CSS.astro";
+import Html5 from "./icons/Html5.astro";
+import Typescript from "./icons/Typescript.astro";
+---
+
+<article class="projects__item">
+  <h3 class="projects__item-title">Grúas Edeca</h3>
+  <p class="projects__item-text">
+    Proyecto de página web para empresa de grúas, diseñado para crear una
+    landing page impactante que atraiga y motive a los visitantes a utilizar sus
+    servicios.
+  </p>
+
+  <div title="tags" class="tags"><Javascript /><React /><CSS /><Html5 /></div>
+  <img
+    src="cesar-gutierrez-portfolio/img/gruasedeca.webp"
+    alt="Proyecto Grúas Edeca"
+    class="projects__image"
+  />
+</article>
+
+<article class="projects__item">
+  <h3 class="projects__item-title">Rick and Morty Fan Page</h3>
+  <p class="projects__item-text">
+    Diseñado con estilo minimalista, este proyecto es una página web para fans.
+    Se consume la Api de Rick and Morty para mostrar información de los
+    personajes.
+  </p>
+
+  <div title="tags" class="tags"><Typescript /><React /><CSS /><Html5 /></div>
+  <img
+    src="cesar-gutierrez-portfolio/img/rickandmorty.webp"
+    alt="Proyecto Rick and Morty Fan Page"
+    class="projects__image"
+  />
+</article>
+
+<style>
+  .projects__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    .projects__item-title {
+      font-weight: 700;
+      font-size: var(--h3-responsive);
+      color: var(--yellow-color);
+    }
+
+    .projects__item-text {
+      text-wrap: pretty;
+      font-size: var(--text-responsive);
+    }
+  }
+
+  .projects__image {
+    border-radius: 10px;
+    aspect-ratio: 16 / 9;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    .tags__item {
+      cursor: default;
+      display: flex;
+      padding: 0.3em 0.5em;
+      width: fit-content;
+      gap: 0.5em;
+      align-items: center;
+      border-radius: 20px;
+    }
+  }
+</style>

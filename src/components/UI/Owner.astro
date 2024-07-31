@@ -30,23 +30,27 @@ import SocialLinks from "./SocialLinks.astro";
   .owner {
     display: flex;
     flex-wrap: wrap;
+    background-color: var(--darkgray-color);
+
+    border-radius: 10px;
 
     .owner-info {
-      width: 75%;
+      padding: 1em;
+      width: 70%;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-      gap: 1em;
+      gap: 2em;
 
       .owner-info__head {
         h1 {
-          font-size: 40px;
+          font-size: var(--h1-responsive);
           font-family: var(--archivo-black-font);
         }
         h2 {
-          font-family: var(--archivo-black-font);
           color: var(--green-color);
-          font-size: 20px;
+          font-size: var(--h2-responsive);
+          font-family: var(--archivo-black-font);
         }
       }
 
@@ -54,7 +58,7 @@ import SocialLinks from "./SocialLinks.astro";
         display: flex;
         flex-direction: column;
         flex-grow: 1;
-        gap: 0.5em;
+        gap: 1em;
 
         span {
           font-weight: bold;
@@ -64,12 +68,13 @@ import SocialLinks from "./SocialLinks.astro";
     }
 
     .owner-photo {
+      padding: 1em;
       display: grid;
       place-content: center;
-      width: 25%;
+      width: 30%;
       .owner-photo__image {
-        min-width: 150px;
-        min-height: 150px;
+        min-width: 100px;
+        min-height: 100px;
         border: 2px solid var(--green-color);
         border-radius: 50%;
         aspect-ratio: 1 / 1;
