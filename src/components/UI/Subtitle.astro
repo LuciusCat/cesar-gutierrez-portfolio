@@ -1,0 +1,26 @@
+---
+interface SubtitleProps {
+  src: string;
+  alt: string;
+  children: string;
+}
+
+const { src, alt, children } = Astro.props as SubtitleProps;
+---
+
+<h2><img src={src} alt={alt} />{children}</h2>
+
+<style>
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-family: var(--archivo-black-font);
+    font-size: 20px;
+    color: var(--yellow-color);
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
+</style>

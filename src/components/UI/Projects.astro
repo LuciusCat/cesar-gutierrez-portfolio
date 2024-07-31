@@ -1,0 +1,121 @@
+---
+import Subtitle from "./Subtitle.astro";
+---
+
+<section class="projects">
+  <Subtitle
+    src="cesar-gutierrez-portfolio/icons/code.svg"
+    alt="Proyecto Grúas Edeca"
+    children="Proyectos"
+  />
+  <article class="projects__item">
+    <h2 class="projects__item-title">Grúas Edeca</h2>
+    <p class="projects__item-text">
+      Proyecto de página web para empresa de grúas, diseñado para crear una
+      landing page impactante que atraiga y motive a los visitantes a utilizar
+      sus servicios.
+    </p>
+
+    <div title="tags" class="tags">
+      <figure class="tags__item react">
+        <img
+          src="cesar-gutierrez-portfolio/public/icons/react.svg"
+          alt="Logo React"
+          class="tags__item-icon"
+        />
+        <p class="tags__item-text">React</p>
+      </figure>
+
+      <figure class="tags__item javascript">
+        <img
+          src="cesar-gutierrez-portfolio/public/icons/javascript.svg"
+          alt="Logo javascript"
+          class="tags__item-icon"
+        />
+        <p class="tags__item-text">JavaScript</p>
+      </figure>
+    </div>
+
+    <img
+      src="cesar-gutierrez-portfolio/img/gruasedeca.webp"
+      alt="Proyecto Grúas Edeca"
+      class="projects__image"
+    />
+  </article>
+
+  <article class="projects__item">
+    <img
+      src="cesar-gutierrez-portfolio/img/rickandmorty.webp"
+      alt="Proyecto Rick and Morty fan page"
+      class="projects__image"
+    />
+  </article>
+</section>
+
+<style>
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    .projects__item {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      .projects__item-title {
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--red-color);
+      }
+
+      .projects__item-text {
+        text-wrap: pretty;
+      }
+    }
+
+    .projects__image {
+      border-radius: 10px;
+      aspect-ratio: 16 / 9;
+    }
+
+    .tags {
+      display: flex;
+      gap: 1em;
+      .tags__item {
+        cursor: default;
+        display: flex;
+        padding: 0.3em 0.5em;
+        width: fit-content;
+        gap: 0.5em;
+        align-items: center;
+        border-radius: 20px;
+      }
+
+      .tags__item-icon {
+        padding: 2px;
+        width: 24px;
+        height: 24px;
+      }
+
+      .tags__item-text {
+        font-weight: 700;
+      }
+    }
+
+    .react {
+      border: 2px solid #61dbfb;
+      background-color: var(--white-color);
+      .tags__item-text {
+        color: #61dbfb;
+      }
+    }
+
+    .javascript {
+      border: 2px solid #f0db4f;
+      background-color: #323330;
+      .tags__item-text {
+        color: #f0db4f;
+      }
+    }
+  }
+</style>

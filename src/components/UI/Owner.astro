@@ -18,7 +18,11 @@ import SocialLinks from "./SocialLinks.astro";
     </div>
   </article>
   <figure class="owner-photo">
-    <img src="img/owner.webp" alt="Fotografía César Gutiérrez" />
+    <img
+      src="/cesar-gutierrez-portfolio/img/owner.webp"
+      alt="Fotografía César Gutiérrez"
+      class="owner-photo__image"
+    />
   </figure>
 </section>
 
@@ -63,9 +67,9 @@ import SocialLinks from "./SocialLinks.astro";
       display: grid;
       place-content: center;
       width: 25%;
-      img {
-        width: 150px;
-        height: 150px;
+      .owner-photo__image {
+        min-width: 150px;
+        min-height: 150px;
         border: 2px solid var(--green-color);
         border-radius: 50%;
         aspect-ratio: 1 / 1;
